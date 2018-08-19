@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 class Botao extends Component{
 
@@ -20,25 +20,24 @@ class Botao extends Component{
 
    render(){
       return(
-         <TouchableOpacity style={this.style.Botao}>
+         <TouchableOpacity style={this.style.botao}>
             <View>
                <Text>Quebrar Biscoito</Text>
             </View>
          </TouchableOpacity>
       );
    }
-
 }
 
-export default class App extends Component {
+export default class BiscoitoDaSorte extends Component {
 
-  render() {
-    return (
+   render() {
+      return (
       <View style={styles.body}>
-         <Botao/>
+        <Botao/>
       </View>
-    );
-  }
+      );
+   }
 }
 
 const styles = StyleSheet.create({
